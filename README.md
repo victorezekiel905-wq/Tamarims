@@ -9,6 +9,7 @@ Plain HTML, CSS and JavaScript with no build step. Open `index.html` in a browse
 | File | Page |
 | --- | --- |
 | `index.html` | Home: video hero, attractions, parties, reviews, hours and map |
+| `about.html` | About us: who Tamarims is, values, a walk through the building, the team |
 | `play.html` | Things to do: soft play, trampoline, bowling, VR, arcade, snooker, kiddie rides, extras |
 | `parties.html` | Parties and events, with an enquiry form that opens WhatsApp |
 | `gallery.html` | Filterable photo and video gallery with a lightbox |

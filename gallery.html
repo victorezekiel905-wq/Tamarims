@@ -36,6 +36,7 @@
   <div class="wrap">
     <a class="nav__logo" href="index.html" aria-label="Tamarims D Place, home"><img src="assets/logo/logo.svg" alt="Tamarims" width="158" height="35"></a>
     <nav class="nav__menu" aria-label="Main">
+        <a href="about.html">About</a>
         <a href="play.html">Play</a>
         <a href="parties.html">Parties</a>
         <a href="gallery.html" aria-current="page">Gallery</a>
@@ -51,6 +52,7 @@
 <div class="drawer" id="drawer">
   <ul class="drawer__links">
       <li><a href="index.html">Home<span style="background:var(--amber)"></span></a></li>
+      <li><a href="about.html">About<span style="background:var(--violet)"></span></a></li>
       <li><a href="play.html">Play<span style="background:var(--sun)"></span></a></li>
       <li><a href="parties.html">Parties<span style="background:var(--berry)"></span></a></li>
       <li><a href="gallery.html">Gallery<span style="background:var(--sky)"></span></a></li>
@@ -86,8 +88,22 @@
       <button type="button" data-filter="vr" aria-pressed="false">VR and arcade</button>
       <button type="button" data-filter="bowling" aria-pressed="false">Bowling and snooker</button>
       <button type="button" data-filter="parties" aria-pressed="false">Parties</button>
+      <button type="button" data-filter="building" aria-pressed="false">The building</button>
     </div>
     <div class="masonry">
+      <button class="tile" type="button" data-cat="kids" data-full="assets/img/gm-softplay.webp"><img src="assets/img/gm-softplay-sm.webp" alt="The soft play frame" width="820" height="547" loading="lazy" decoding="async"><figcaption>The soft play frame</figcaption></button>
+      <button class="tile" type="button" data-cat="kids" data-video="assets/video/t-slide.mp4"><img src="assets/video/t-slide.webp" alt="Down the big green slide" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Down the big green slide</figcaption></button>
+      <button class="tile" type="button" data-cat="building" data-full="assets/img/gm-building-dusk.webp"><img src="assets/img/gm-building-dusk-sm.webp" alt="Tamarims at dusk" width="820" height="547" loading="lazy" decoding="async"><figcaption>Tamarims at dusk</figcaption></button>
+      <button class="tile" type="button" data-cat="vr" data-full="assets/img/gm-vr-racing.webp"><img src="assets/img/gm-vr-racing-sm.webp" alt="VR racing" width="600" height="1067" loading="lazy" decoding="async"><figcaption>VR racing</figcaption></button>
+      <button class="tile" type="button" data-cat="bowling" data-full="assets/img/gm-bowling.webp"><img src="assets/img/gm-bowling-sm.webp" alt="The bowling lanes" width="820" height="547" loading="lazy" decoding="async"><figcaption>The bowling lanes</figcaption></button>
+      <button class="tile" type="button" data-cat="parties" data-full="assets/img/gm-event-hall.webp"><img src="assets/img/gm-event-hall-sm.webp" alt="The event hall" width="820" height="547" loading="lazy" decoding="async"><figcaption>The event hall</figcaption></button>
+      <button class="tile" type="button" data-cat="vr" data-video="assets/video/t-vrshoot.mp4"><img src="assets/video/t-vrshoot.webp" alt="VR shooting stand" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>VR shooting stand</figcaption></button>
+      <button class="tile" type="button" data-cat="vr" data-full="assets/img/gm-dance.webp"><img src="assets/img/gm-dance-sm.webp" alt="Dance machine" width="820" height="461" loading="lazy" decoding="async"><figcaption>Dance machine</figcaption></button>
+      <button class="tile" type="button" data-cat="building" data-full="assets/img/gm-building-day.webp"><img src="assets/img/gm-building-day-sm.webp" alt="Our building in Awoyaya" width="820" height="615" loading="lazy" decoding="async"><figcaption>Our building in Awoyaya</figcaption></button>
+      <button class="tile" type="button" data-cat="vr" data-video="assets/video/t-hoops.mp4"><img src="assets/video/t-hoops.webp" alt="Basketball arcade" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Basketball arcade</figcaption></button>
+      <button class="tile" type="button" data-cat="building" data-full="assets/img/gm-massage.webp"><img src="assets/img/gm-massage-sm.webp" alt="The massage room" width="820" height="546" loading="lazy" decoding="async"><figcaption>The massage room</figcaption></button>
+      <button class="tile" type="button" data-cat="vr" data-full="assets/img/gm-vr-seat.webp"><img src="assets/img/gm-vr-seat-sm.webp" alt="VR space seat" width="600" height="1067" loading="lazy" decoding="async"><figcaption>VR space seat</figcaption></button>
+      <button class="tile" type="button" data-cat="building" data-full="assets/img/gm-building-front.webp"><img src="assets/img/gm-building-front-sm.webp" alt="The front of the building" width="820" height="615" loading="lazy" decoding="async"><figcaption>The front of the building</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/photo-slides.webp"><img src="assets/img/photo-slides-sm.webp" alt="Waving from the wave slide" width="760" height="508" loading="lazy" decoding="async"><figcaption>Waving from the wave slide</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-video="assets/video/t-softplay.mp4"><img src="assets/video/t-softplay.webp" alt="Down the slide into the ball pit" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Down the slide into the ball pit</figcaption></button>
       <button class="tile" type="button" data-cat="vr" data-full="assets/img/vr-seat.webp"><img src="assets/img/vr-seat.webp" alt="VR space seat" width="720" height="1280" loading="lazy" decoding="async"><figcaption>VR space seat</figcaption></button>
@@ -96,15 +112,12 @@
       <button class="tile" type="button" data-cat="bowling" data-full="assets/img/bowling.webp"><img src="assets/img/bowling.webp" alt="On the lanes" width="720" height="1280" loading="lazy" decoding="async"><figcaption>On the lanes</figcaption></button>
       <button class="tile" type="button" data-cat="vr" data-video="assets/video/t-arcade.mp4"><img src="assets/video/t-arcade.webp" alt="Dance machine and air hockey" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Dance machine and air hockey</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/softplay-wide.webp"><img src="assets/img/softplay-wide.webp" alt="The soft play frame" width="1080" height="608" loading="lazy" decoding="async"><figcaption>The soft play frame</figcaption></button>
-      <button class="tile" type="button" data-cat="vr" data-full="assets/img/dance.webp"><img src="assets/img/dance.webp" alt="Dance machine duel" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Dance machine duel</figcaption></button>
-      <button class="tile" type="button" data-cat="parties" data-full="assets/img/event-hall.webp"><img src="assets/img/event-hall.webp" alt="The event hall" width="1080" height="1920" loading="lazy" decoding="async"><figcaption>The event hall</figcaption></button>
       <button class="tile" type="button" data-cat="vr" data-full="assets/img/photo-vr.webp"><img src="assets/img/photo-vr-sm.webp" alt="First time in VR" width="760" height="508" loading="lazy" decoding="async"><figcaption>First time in VR</figcaption></button>
       <button class="tile" type="button" data-cat="bowling" data-full="assets/img/snooker.webp"><img src="assets/img/snooker.webp" alt="Snooker room" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Snooker room</figcaption></button>
       <button class="tile" type="button" data-cat="parties" data-full="assets/img/mascots.webp"><img src="assets/img/mascots.webp" alt="Mascots join the party" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Mascots join the party</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/rope-bridge.webp"><img src="assets/img/rope-bridge.webp" alt="Rope bridge" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Rope bridge</figcaption></button>
       <button class="tile" type="button" data-cat="bowling" data-video="assets/video/t-bowling.mp4"><img src="assets/video/t-bowling.webp" alt="Strike!" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Strike!</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/photo-ballpit-kids.webp"><img src="assets/img/photo-ballpit-kids-sm.webp" alt="Buried in balls" width="760" height="508" loading="lazy" decoding="async"><figcaption>Buried in balls</figcaption></button>
-      <button class="tile" type="button" data-cat="vr" data-full="assets/img/vr-racer.webp"><img src="assets/img/vr-racer.webp" alt="VR racing" width="720" height="1000" loading="lazy" decoding="async"><figcaption>VR racing</figcaption></button>
       <button class="tile" type="button" data-cat="vr" data-full="assets/img/air-hockey.webp"><img src="assets/img/air-hockey.webp" alt="Air hockey" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Air hockey</figcaption></button>
       <button class="tile" type="button" data-cat="parties" data-full="assets/img/party-cake.webp"><img src="assets/img/party-cake.webp" alt="Birthday table" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Birthday table</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/slides.webp"><img src="assets/img/slides.webp" alt="Wave slide" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Wave slide</figcaption></button>
@@ -113,7 +126,6 @@
       <button class="tile" type="button" data-cat="vr" data-full="assets/img/vr-egg.webp"><img src="assets/img/vr-egg.webp" alt="360 motion ride" width="720" height="1280" loading="lazy" decoding="async"><figcaption>360 motion ride</figcaption></button>
       <button class="tile" type="button" data-cat="parties" data-full="assets/img/photo-family.webp"><img src="assets/img/photo-family-sm.webp" alt="Family table" width="760" height="508" loading="lazy" decoding="async"><figcaption>Family table</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/trampoline.webp"><img src="assets/img/trampoline.webp" alt="Basketball trampoline" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Basketball trampoline</figcaption></button>
-      <button class="tile" type="button" data-cat="bowling" data-full="assets/img/bowling-lane.webp"><img src="assets/img/bowling-lane.webp" alt="Neon lanes" width="1080" height="1500" loading="lazy" decoding="async"><figcaption>Neon lanes</figcaption></button>
       <button class="tile" type="button" data-cat="vr" data-full="assets/img/vr-stand.webp"><img src="assets/img/vr-stand.webp" alt="VR shooting stand" width="720" height="1000" loading="lazy" decoding="async"><figcaption>VR shooting stand</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-full="assets/img/moto-ride.webp"><img src="assets/img/moto-ride.webp" alt="Motorbike ride" width="720" height="1280" loading="lazy" decoding="async"><figcaption>Motorbike ride</figcaption></button>
       <button class="tile" type="button" data-cat="kids" data-video="assets/video/t-rides.mp4"><img src="assets/video/t-rides.webp" alt="Kiddie rides" width="720" height="900" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span><figcaption>Kiddie rides</figcaption></button>
@@ -165,6 +177,7 @@
       <div>
         <h4>Explore</h4>
         <ul>
+          <li><a href="about.html">About us</a></li>
           <li><a href="play.html">Things to do</a></li>
           <li><a href="parties.html">Parties and events</a></li>
           <li><a href="gallery.html">Gallery</a></li>

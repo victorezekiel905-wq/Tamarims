@@ -468,6 +468,29 @@ body.nav-open { overflow: hidden; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { padding: 0 22px 22px; color: var(--muted); }
 
+
+/* ---------- about page ---------- */
+.t-blue { background: var(--blue) !important; color: #fff !important; }
+.values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: clamp(36px, 5vw, 56px); }
+.value { position: relative; overflow: hidden; padding: 26px 28px 32px; border-radius: var(--r-md); min-height: 300px; display: flex; flex-direction: column; gap: 12px; }
+.value h3 { font-size: var(--fs-h3); }
+.value p { font-size: .96875rem; line-height: 1.55; opacity: .9; }
+.value__n { margin-bottom: 52px; font-family: var(--display); font-weight: 800; font-size: 4.5rem; line-height: 1; letter-spacing: -.04em; opacity: .22; }
+.value::after { content: ""; position: absolute; right: -50px; top: -50px; width: 150px; height: 150px; border-radius: 50%; border: 18px solid rgba(255, 255, 255, .16); transition: transform 1s var(--ease); }
+.value:hover::after { transform: scale(1.25); }
+.spaces { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 16px; margin-top: clamp(36px, 5vw, 56px); }
+.space { display: grid; gap: 8px; align-content: start; }
+.space figure { position: relative; margin: 0 0 8px; aspect-ratio: 4 / 3; border-radius: var(--r-md); overflow: hidden; background: var(--ink); }
+.space figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.space:hover figure img { transform: scale(1.05); }
+.space figure .card__tag { position: absolute; left: 14px; top: 14px; }
+.space h3 { font-size: 1.25rem; letter-spacing: -.01em; display: flex; align-items: center; gap: 8px; }
+.space h3::after { content: ""; width: 18px; height: 18px; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27black%27 stroke-width=%272.4%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M5 12h14M13 6l6 6-6 6%27/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27black%27 stroke-width=%272.4%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M5 12h14M13 6l6 6-6 6%27/%3E%3C/svg%3E") center / contain no-repeat; opacity: 0; transform: translateX(-6px); transition: opacity .3s, transform .35s var(--ease); color: var(--blue); }
+.space:hover h3::after { opacity: 1; transform: none; }
+.space p { color: var(--muted); font-size: .96875rem; line-height: 1.55; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 960px; margin: clamp(36px, 5vw, 56px) auto 0; }
+.pair .quote blockquote { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+
 /* ---------- 404 ---------- */
 .lost { min-height: 70vh; display: grid; place-items: center; text-align: center; padding-block: 80px; }
 .lost__num { font-family: var(--display); font-weight: 800; font-size: clamp(6rem, 20vw, 12rem); line-height: .85; letter-spacing: -.05em; display: flex; align-items: center; justify-content: center; gap: .04em; color: var(--blue); }
@@ -498,7 +521,9 @@ body.nav-open { overflow: hidden; }
   .cta .wrap { grid-template-columns: 1fr; align-items: start; }
   .fan { max-width: 560px; width: 100%; margin-inline: auto; }
   .collage { max-width: 560px; width: 100%; margin-inline: auto; }
-  .steps { grid-template-columns: 1fr; }
+  .steps, .values { grid-template-columns: 1fr; }
+  .value { min-height: 220px; }
+  .spaces { grid-template-columns: 1fr 1fr; }
   .map { min-height: 360px; }
 }
 @media (max-width: 760px) {
@@ -532,6 +557,7 @@ body.nav-open { overflow: hidden; }
   .feature__chip { left: 12px; }
   .feature--flip .feature__chip { right: 12px; }
   .extras { grid-template-columns: 1fr; }
+  .spaces, .pair { grid-template-columns: 1fr; }
   .extra { min-height: 0; }
   .masonry { columns: 2 150px; column-gap: 10px; }
   .masonry .tile { margin-bottom: 10px; border-radius: 14px; }
